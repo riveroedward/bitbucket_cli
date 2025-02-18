@@ -1,84 +1,107 @@
-#### Bitbucket CLI ####
+# Bitbucket CLI
 
-Project Overview
+_Project Overview
 
 Bitbucket CLI is a command-line tool designed to interact with Bitbucket's API, allowing users to efficiently manage repositories, pull requests, and other resources without leaving the terminal.
 
-File Structure
+### File Structure
 
-Here's an overview of the project's files and directories:
+_Here's an overview of the project's files and directories:
 
-.env: Configuration file for environment variables. It stores sensitive information like Bitbucket credentials.
+### .env: 
+```
+Configuration file for environment variables. It stores sensitive information like Bitbucket credentials.
+```
 
-main.py: The main entry point of the CLI tool. It initializes the application and parses command-line arguments.
+ ###  main.py: 
+ ```
+ The main entry point of the CLI tool. It initializes the application and parses command-line arguments.
+ ```
+###r equirements.txt: 
+```
+Lists all Python dependencies required to run the project.
+```
+# bitbucket_cli/: Contains the core modules of the project:
 
-requirements.txt: Lists all Python dependencies required to run the project.
+### api.py: 
 
-bitbucket_cli/: Contains the core modules of the project:
+_Manages all interactions with the Bitbucket API, including authentication, listing repositories, and managing pull requests._
 
-api.py: Manages all interactions with the Bitbucket API, including authentication, listing repositories, and managing pull requests.
+### cli.py: 
 
-cli.py: Handles the command-line interface, parsing user input, and calling appropriate functions from api.py.
+_Handles the command-line interface, parsing user input, and calling appropriate functions from api.py._
 
-config.py: Manages configuration settings, including loading environment variables from .env.
+### config.py: 
 
-utils.py: Utility functions shared across different modules, like data formatting and error handling.
+_Manages configuration settings, including loading environment variables from .env._
 
-test/: Contains unit tests for the application:
+### utils.py: 
 
-init.py: Marks the directory as a package.
+_Utility functions shared across different modules, like data formatting and error handling._
 
-test_api.py: Unit tests for the api.py module.
+### test/: 
 
-test_cli.py: Unit tests for the cli.py module.
+_Contains unit tests for the application:_
 
-Features
+### init.py: 
 
-List, create, and manage repositories
+_Marks the directory as a package._
 
+### test_api.py: 
+_Unit tests for the api.py module._
+
+### test_cli.py: 
+
+_Unit tests for the cli.py module._
+
+### Features
+```
+_List, create, and manage repositories_
+```
 View and manage pull requests
 
-Interact with branches and commits
+## Interact with branches and commits
 
-Configurable through a .env file
+_Configurable through a .env file_
 
-Installation
+### Installation
 
 Clone the repository:
-
+```
 git clone <repository-url>
 cd bitbucket_cli-main
-
+```
 Create and activate a virtual environment (optional but recommended):
-
+```
 python3 -m venv venv
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-
+```
 Install the required dependencies:
-
+```
 pip install -r requirements.txt
+```
+### Configuration
 
-Configuration
+_Create a .env file in the root directory and provide your Bitbucket credentials and other necessary configurations_
 
-Create a .env file in the root directory and provide your Bitbucket credentials and other necessary configurations:
-
+```
 BITBUCKET_USERNAME=<your-username>
 BITBUCKET_ACCESS_TOKEND=<your-token>
-
+```
 Usage
 
 To start using the CLI tool, run:
-
+```
 python main.py --help
-
+```
 Example commands:
-
+```
 python main.py list-repos
 python main.py create-repo --name <repo-name>
+```
+### Testing
 
-Testing
-
-To run the tests, use the following command:
-
+_To run the tests, use the following command:_
+```
 pytest test/
-
+```
