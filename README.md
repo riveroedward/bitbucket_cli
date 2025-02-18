@@ -96,8 +96,10 @@ python main.py --help
 ```
 Example commands:
 ```
-python main.py list-repos
-python main.py create-repo --name <repo-name>
+python main.py create-project --workspace myworkspaces --name "My Project" --key MYPROJ
+python main.py create-repo --workspace myworkspace --project-key MYPROJ --name my-repo
+python3 main.py add-user --workspace myworkspacesr --repo-slug my-repo --username <username> --permission write
+python main.py configure-branch --workspace myworkspace --repo-slug my-repo --branch-name main --exempt-users edw.riv
 ```
 ### Testing
 
