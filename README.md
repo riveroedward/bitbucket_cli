@@ -1,6 +1,6 @@
 # Bitbucket CLI
 
-_Project Overview
+_Project Overview_
 
 Bitbucket CLI is a command-line tool designed to interact with Bitbucket's API, allowing users to efficiently manage repositories, pull requests, and other resources without leaving the terminal.
 
