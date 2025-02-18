@@ -9,18 +9,18 @@ Bitbucket CLI is a command-line tool designed to interact with Bitbucket's API, 
 _Here's an overview of the project's files and directories:
 
 ### .env: 
-```
+
 Configuration file for environment variables. It stores sensitive information like Bitbucket credentials.
-```
+
 
  ###  main.py: 
- ```
+
  The main entry point of the CLI tool. It initializes the application and parses command-line arguments.
- ```
-###r equirements.txt: 
-```
+
+### requirements.txt: 
+
 Lists all Python dependencies required to run the project.
-```
+
 # bitbucket_cli/: Contains the core modules of the project:
 
 ### api.py: 
