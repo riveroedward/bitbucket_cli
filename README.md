@@ -18,8 +18,6 @@ requirements.txt: Lists all Python dependencies required to run the project.
 
 bitbucket_cli/: Contains the core modules of the project:
 
-init.py: Marks the directory as a package.
-
 api.py: Manages all interactions with the Bitbucket API, including authentication, listing repositories, and managing pull requests.
 
 cli.py: Handles the command-line interface, parsing user input, and calling appropriate functions from api.py.
@@ -67,7 +65,7 @@ Configuration
 Create a .env file in the root directory and provide your Bitbucket credentials and other necessary configurations:
 
 BITBUCKET_USERNAME=<your-username>
-BITBUCKET_PASSWORD=<your-password>
+BITBUCKET_ACCESS_TOKEND=<your-token>
 
 Usage
 
