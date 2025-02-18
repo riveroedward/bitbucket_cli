@@ -10,8 +10,6 @@ Here's an overview of the project's files and directories:
 
 .env: Configuration file for environment variables. It stores sensitive information like Bitbucket credentials.
 
-README.md: Documentation file providing an overview, installation, and usage instructions.
-
 main.py: The main entry point of the CLI tool. It initializes the application and parses command-line arguments.
 
 requirements.txt: Lists all Python dependencies required to run the project.
