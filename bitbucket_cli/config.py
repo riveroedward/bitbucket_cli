@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Config:
-    BITBUCKET_ACCESS_TOKEN = "ATBBq5VyMTXYuQstGa9VhTLxzuFk5BB5571C"
-    BITBUCKET_API_URL = "https://api.bitbucket.org/2.0"
-    BITBUCKET_USERNAME = "edwardriverop"
+    BITBUCKET_ACCESS_TOKEN = os.getenv("BITBUCKET_ACCESS_TOKEN")
+    BITBUCKET_API_URL = os.getenv("BITBUCKET_API_URL")
+    BITBUCKET_USERNAME = os.getenv("BITBUCKET_USERNAME")
 
     @staticmethod
     def validate():
